@@ -64,7 +64,10 @@ class AsteroidPage extends Component {
       <div className="success-container">
         <div className="container-2">
           <h1 className="asteroid-name">{name}</h1>
-          <p className="nasa-jpl-url">{nasaJplUrl}</p>
+          <p className="nasa-jpl-url">Nasa-Jpl-Url : </p>
+          <a className="nasa-jpl-url" href={nasaJplUrl}>
+            {nasaJplUrl}
+          </a>
           <p className="is-hazardous">
             {isHazardousAsteroid
               ? 'Potentially Hazardous Asteroid'

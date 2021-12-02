@@ -45,7 +45,7 @@ class Home extends Component {
             <input
               type="text"
               className="input-field"
-              placeholder="Enter Asteroid Id"
+              placeholder="   Enter Asteroid Id"
               onChange={this.onChangeInput}
             />
             <button
