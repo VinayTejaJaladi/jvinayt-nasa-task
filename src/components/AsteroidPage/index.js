@@ -25,7 +25,6 @@ class AsteroidPage extends Component {
       this.setState({apiStatus: apiConstants.loading})
       const url = `https://api.nasa.gov/neo/rest/v1/neo/${id}?api_key=EpfCcYM1urBY3OuUgybswEN6TeR1uiThsauA28bK`
       const response = await axios.get(url)
-      console.log(response)
       const asteroidData = {
         name: response.data.name,
         nasaJplUrl: response.data.nasa_jpl_url,
