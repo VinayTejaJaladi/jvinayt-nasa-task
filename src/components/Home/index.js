@@ -34,32 +34,36 @@ class Home extends Component {
   render() {
     return (
       <div className="bg-container">
-        <form
-          className="form-container"
-          onSubmit={e => {
-            e.preventDefault()
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Enter Asteroid Id"
-            onChange={this.onChangeInput}
-          />
-          <button
-            type="button"
-            className="submit-button"
-            onClick={this.onClickSubmit}
+        <div className="inner-container">
+          <h1 className="heading">Asteroids Info</h1>
+          <form
+            className="form-container"
+            onSubmit={e => {
+              e.preventDefault()
+            }}
           >
-            Submit
-          </button>
-          <button
-            type="button"
-            className="random-button"
-            onClick={this.onClickRandomButton}
-          >
-            Random Asteroid
-          </button>
-        </form>
+            <input
+              type="text"
+              className="input-field"
+              placeholder="Enter Asteroid Id"
+              onChange={this.onChangeInput}
+            />
+            <button
+              type="button"
+              className="button"
+              onClick={this.onClickSubmit}
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              className="button random"
+              onClick={this.onClickRandomButton}
+            >
+              Random Asteroid
+            </button>
+          </form>
+        </div>
       </div>
     )
   }

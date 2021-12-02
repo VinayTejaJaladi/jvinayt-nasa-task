@@ -1,0 +1,56 @@
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://cdn.vox-cdn.com/thumbor/CHKFAhUqzNdJWZXl2dQcne1YRt0=/0x0:1280x800/1200x800/filters:focal(538x298:742x502)/cdn.vox-cdn.com/uploads/chorus_image/image/62209533/621_interstellar_asteroid.0.jpg');
+  background-size: cover;
+}
+.container-2 {
+  background-color: #54504d;
+  opacity: 0.6;
+  width: 50%;
+  height: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.container-2:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+.nasa-jpl-url {
+  font-size: 25px;
+}
+.is-hazardous {
+  font-size: 25px;
+}
+
+.loader-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.failure-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png');
+  background-size: cover;
+}
+.error-display {
+  font-size: 35px;
+  color: red;
+  font-weight: bold;
+}
+.go-to {
+  font-size: 20px;
+}

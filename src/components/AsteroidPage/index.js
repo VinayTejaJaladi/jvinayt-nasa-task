@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Link} from 'react-router-dom'
 import axios from 'axios'
 import Loader from 'react-loader-spinner'
 import './index.css'
@@ -42,6 +43,9 @@ class AsteroidPage extends Component {
     return (
       <div className="failure-container">
         <p className="error-display">{errMsg}</p>
+        <Link to="/" className="go-to">
+          Go to Main Page
+        </Link>
       </div>
     )
   }
@@ -58,9 +62,15 @@ class AsteroidPage extends Component {
 
     return (
       <div className="success-container">
-        <h1 className="asteroid-name">{name}</h1>
-        <p className="nasa-jpl-url">{nasaJplUrl}</p>
-        <p className="is-hazardous">{isHazardousAsteroid ? 'TRUE' : 'FALSE'}</p>
+        <div className="container-2">
+          <h1 className="asteroid-name">{name}</h1>
+          <p className="nasa-jpl-url">{nasaJplUrl}</p>
+          <p className="is-hazardous">
+            {isHazardousAsteroid
+              ? 'Potentially Hazardous Asteroid'
+              : 'Not Potentially Hazardous'}
+          </p>
+        </div>
       </div>
     )
   }
